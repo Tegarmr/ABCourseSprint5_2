@@ -1,0 +1,134 @@
+.page-layout {
+  display: flex;
+}
+
+.Sidebar {
+  width: 250px; /* Atau ukuran yang kamu mau */
+  flex-shrink: 0;
+}
+
+
+.App {
+    font-family: sans-serif;
+    text-align: left;
+  }
+  /* Reset CSS */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header Section */
+  .header-container {
+    width: 100%;
+    background-color: rgba(73, 187, 189, 1);
+    color: white;
+    text-align: left;
+    padding: 20px;
+    border-radius: 0;
+  }
+  
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Main Content */
+  .content-container {
+    width: 100%;
+    background-color: rgba(156, 203, 255, 1);
+    padding: 20px;
+    border-radius: 0;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Section Description */
+  .section-description {
+    margin-bottom: 20px;
+  }
+  
+  /* Sub Section */
+  .sub-section {
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .sub-section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Sub Content Box */
+  .sub-content {
+    padding: 15px;
+    border-radius: 10px;
+    color: #333;
+  }
+  
+  /* Placeholder background colors - replace with your choice */
+  .custom-bg-1 {
+    background-color: #e6f7ff;
+  }
+  
+  .custom-bg-2 {
+    background-color: #fff3e0;
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .nav-button {
+    background-color: rgba(73, 187, 189, 1);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    display: flex;
+    align-items: center; /* ✅ Vertikal center */
+    justify-content: center; /* ✅ Horizontal center jika dibutuhkan */
+    gap: 10px;
+  }
+  
+  .nav-button:hover {
+    background-color: rgba(58, 150, 152, 1); /* sedikit lebih gelap saat hover */
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .arrow {
+    font-size: 28px; /* besar hanya untuk simbol panah */
+  }
+  

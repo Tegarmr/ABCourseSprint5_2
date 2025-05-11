@@ -1,0 +1,366 @@
+.register {
+  background-color: #fffefc;
+  height: 900px;
+  position: relative;
+  width: 1440px;
+}
+
+.register .group {
+  background-image: url(https://c.animaapp.com/Z683kwx9/img/unsplash--8ewotuzdsg.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 825px;
+  left: 59px;
+  position: absolute;
+  top: 37px;
+  width: 731px;
+}
+
+.register .div {
+  height: 99px;
+  left: 50px;
+  position: relative;
+  top: 672px;
+  width: 435px;
+}
+
+.register .text-wrapper {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 37px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 431px;
+}
+
+.register .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 25px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 61px;
+  width: 299px;
+}
+
+.register .group-2 {
+  height: 674px;
+  left: 889px;
+  position: absolute;
+  top: 113px;
+  width: 456px;
+}
+
+.register .group-3 {
+  height: 107px;
+  left: 53px;
+  position: absolute;
+  top: 0;
+  width: 331px;
+}
+
+.register .overlap-group-wrapper {
+  height: 59px;
+  left: 0;
+  position: absolute;
+  top: 48px;
+  width: 333px;
+}
+
+.register .overlap-group {
+  background-color: #49bbbd99;
+  border-radius: 33px;
+  height: 59px;
+  position: relative;
+  width: 329px;
+}
+
+.register .text-wrapper-3 {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  left: 72px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 18px;
+}
+
+.register .overlap {
+  background-image: url(https://c.animaapp.com/Z683kwx9/img/rectangle-79.svg);
+  background-size: 100% 100%;
+  height: 40px;
+  left: 171px;
+  position: absolute;
+  top: 10px;
+  width: 146px;
+}
+
+.register .text-wrapper-4 {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  left: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 8px;
+}
+
+.register .text-wrapper-5 {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 86px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.register .group-4 {
+  height: 90px;
+  left: 0;
+  position: absolute;
+  top: 360px;
+  width: 439px;
+}
+
+.register .div-wrapper {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #49bbbd;
+  border-radius: 40px;
+  height: 54px;
+  left: 0;
+  position: absolute;
+  top: 36px;
+  width: 435px;
+}
+
+.register .text-wrapper-6 {
+  color: #acacac;
+  font-family: "Poppins", Helvetica;
+  font-size: 15px;
+  font-weight: 300;
+  left: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+  top: 14px;
+}
+
+.register .text-wrapper-7 {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.register .group-5 {
+  height: 90px;
+  left: 0;
+  position: absolute;
+  top: 240px;
+  width: 439px;
+}
+
+.register .overlap-wrapper {
+  height: 90px;
+  left: 0;
+  position: absolute;
+  top: 480px;
+  width: 435px;
+}
+
+.register .overlap-2 {
+  height: 90px;
+  position: relative;
+  width: 439px;
+}
+
+.register .group-6 {
+  height: 90px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 439px;
+}
+
+.register .invisible {
+  height: 18px;
+  left: 389px;
+  position: absolute;
+  top: 54px;
+  width: 18px;
+}
+
+.register .group-7 {
+  background-image: url(https://c.animaapp.com/Z683kwx9/img/group@2x.png);
+  background-size: 100% 100%;
+  height: 16px;
+  position: relative;
+  top: 1px;
+}
+
+.register .p {
+  color: #5b5b5b;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 159px;
+  width: 454px;
+}
+
+.register .group-8 {
+  height: 49px;
+  left: 203px;
+  position: absolute;
+  top: 680px;
+  width: 234px;
+}
+
+.register .overlap-3 {
+  background-color: #49bbbd;
+  border-radius: 36px;
+  height: 49px;
+  position: relative;
+  width: 232px;
+}
+
+.register .text-wrapper-8 {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 94px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 13px;
+}
+
+.social-login {
+  text-align: center;
+  margin-top: 150px; /* Atur tinggi jarak dari atas sesuai kebutuhan */
+  font-family: "Poppins", sans-serif;
+}
+
+.social-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px; /* Lebih kecil biar mepet ke tombol */
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 0; /* Buat 0 agar nempel dengan teks di atasnya */
+}
+
+
+
+.btn-social {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.btn-social:hover {
+  transform: scale(1.1);
+}
+
+.social-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.input-field {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #000;
+}
+.register .text-wrapper-9 {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+.register .text-wrapper-10 {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.register .confirm-password-wrapper {
+  height: 90px;
+  left: 0;
+  position: absolute;
+  top: 570px; /* Geser ke bawah */
+  width: 435px;
+}
+.message {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.message.success {
+  color: green;
+}
+
+.message.error {
+  color: red;
+}
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  margin-left:4px;
+}

@@ -1,0 +1,259 @@
+/* Reset CSS */
+.sidebar {
+  position: sticky;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  .App {
+    font-family: sans-serif;
+    text-align: left;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* Layout container for sidebar and main content */
+  .layout-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* SIDEBAR STYLES */
+  .sidebar {
+    width: 280px;
+    height: 100%;
+    background-color: #f8f9fa;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    border-right: 1px solid #e0e0e0;
+  }
+  
+  /* Header styling with vertical layout */
+  .sidebar-header {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .sidebar-title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin: 16px 0 0 0;
+    margin-bottom: 12px;
+    letter-spacing: 0.05em;
+    color: #4b5563;
+  }
+  
+  .back-button {
+    background-color: #14b8a6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #0f9488;
+    transform: translateX(-2px);
+  }
+  
+  /* Lessons container */
+  .lessons-container {
+    padding: 0 16px;
+    margin-bottom: 24px;
+  }
+  
+  /* Quiz container */
+  .quiz-container {
+    padding: 0 16px;
+  }
+  
+  .section-title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: 0.05em;
+    color: #4b5563;
+  }
+  
+  /* Card styling */
+  .lesson-card,
+  .quiz-card {
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+  }
+  
+  .lesson-card:hover,
+  .quiz-card:hover {
+    transform: translateX(3px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Card color variations */
+  .teal-card {
+    background-color: #ccfbf1;
+    border-left-color: #14b8a6;
+  }
+  
+  .blue-card {
+    background-color: #dbeafe;
+    border-left-color: #60a5fa;
+  }
+  
+  .purple-card {
+    background-color: #ede9fe;
+    border-left-color: #a78bfa;
+  }
+  
+  .red-card {
+    background-color: #fee2e2;
+    border-left-color: #f87171;
+  }
+  
+  .orange-card {
+    background-color: #ffedd5;
+    border-left-color: #fb923c;
+  }
+  
+  .yellow-card {
+    background-color: #fef3c7;
+    border-left-color: #fbbf24;
+  }
+  
+  .pink-card {
+    background-color: #fce7f3;
+    border-left-color: #f472b6;
+  }
+  
+  /* Card content styling */
+  .card-icon {
+    background-color: #1f2937;
+    border-radius: 4px;
+    padding: 4px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-subtitle {
+    font-size: 0.75rem;
+    color: #6b7280;
+  }
+  
+  .card-title {
+    font-size: 0.875rem;
+    margin: 2px 0;
+    font-weight: 500;
+  }
+  
+  .card-duration {
+    font-size: 0.75rem;
+    color: #6b7280;
+  }
+  
+  /* Custom scrollbar */
+  .sidebar::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .sidebar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 10px;
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+  }
+  
+  /* MAIN CONTENT STYLES */
+  .main-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header Section */
+  .header-container {
+    width: 100%;
+    background-color: #49bbbd;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .lesson-card.active {
+    border-left-width: 4px;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08);
+    transform: translateX(3px);
+  }
+
+  .lesson-card.teal-card.active {
+    background-color: #3fb099; /* lebih terang dari #ccfbf1 */
+  }
+  
+  .lesson-card.blue-card.active {
+    background-color: #bfdbfe;
+  }
+  
+  .lesson-card.purple-card.active {
+    background-color: #ddd6fe;
+  }
+  
+  .lesson-card.red-card.active {
+    background-color: #fecaca;
+  }
+  

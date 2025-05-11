@@ -1,0 +1,339 @@
+.login {
+  background-color: #fffefc;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.login .group {
+  height: 91.6%;
+  width: 52.4%;
+  position: absolute;
+  top: 4.2%;
+  left: 2.8%;
+}
+
+
+.login .overlap-group {
+  background-image: url(https://c.animaapp.com/Y2LdrOpv/img/unsplash-m7z6w8evzme.png);
+  background-size: cover;
+  height: 100%;
+  width: 97.6%;
+  position: absolute;
+  top: 0;
+  left: 2.4%;
+}
+
+.login .div {
+  width: 60%;
+  height: auto;
+  position: relative;
+  top: 81.3%;
+  left: 6.7%;
+}
+
+.login .text-wrapper {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 2.3rem;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.login .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 1.6rem;
+  font-weight: 400;
+  position: absolute;
+  top: 3.8rem;
+  left: 0;
+  width: 70%;
+}
+
+.login .group-2 {
+  height: 68%;
+  width: 31.5%;
+  position: absolute;
+  top: 16.1%;
+  left: 61.7%;
+}
+
+.login .group-3 {
+  height: 11.9%;
+  width: 72.9%;
+  position: absolute;
+  top: 0;
+  left: 11.7%;
+}
+
+.login .overlap-group-wrapper {
+  width: 100%;
+  height: 55%;
+  position: absolute;
+  top: 45%;
+}
+
+.login .overlap-group-2 {
+  background-color: #49bbbd99;
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.login .overlap {
+  background-image: url(https://c.animaapp.com/Y2LdrOpv/img/rectangle-79.svg);
+  background-size: cover;
+  height: 2.5rem;
+  width: 45%;
+  position: absolute;
+  top: 0.7rem;
+  left: 4%;
+}
+
+.login .text-wrapper-3 {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 1rem;
+  font-weight: 500;
+  position: absolute;
+  top: 0.5rem;
+  left: 15%;
+}
+
+.login .text-wrapper-4 {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 1rem;
+  font-weight: 400;
+  position: absolute;
+  top: 1.1rem;
+  left: 61%;
+}
+
+.login .text-wrapper-5 {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 1rem;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+
+.login .group-4 {
+  height: 49%;
+  width: 100%;
+  position: absolute;
+  top: 26%;
+}
+
+.login .group-5 {
+  height: 30%;
+  width: 96.5%;
+  position: absolute;
+  top: 30%;
+}
+
+.login .div-wrapper {
+  background-color: #ffffff;
+  border: 1px solid #49bbbd;
+  border-radius: 2.5rem;
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  top: 40%;
+}
+
+.login .text-wrapper-6 {
+  color: #acacac;
+  font-family: "Poppins", Helvetica;
+  font-size: 0.95rem;
+  font-weight: 300;
+  position: absolute;
+  top: 0.9rem;
+  left: 1.9rem;
+}
+
+.login .text-wrapper-7 {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 1rem;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+}
+
+.login .overlap-wrapper {
+  width: 100%;
+  height: 30%;
+  position: absolute;
+  top: 70%;
+}
+
+.login .overlap-2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.login .group-6 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.login .invisible {
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  top: 60%;
+  left: 89%;
+}
+
+.login .group-7 {
+  background-image: url(https://c.animaapp.com/Y2LdrOpv/img/group@2x.png);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.login .p {
+  color: #5b5b5b;
+  font-family: "Poppins", Helvetica;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.login .group-8 {
+  width: 96%;
+  height: 2rem;
+  position: absolute;
+  top: 78.9%;
+  left: 0;
+}
+
+.login .rectangle-2 {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+}
+
+.login .text-wrapper-8 {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 0.75rem;
+  font-weight: 300;
+  position: absolute;
+  top: 0;
+  left: 1.6rem;
+}
+
+.login .text-wrapper-9 {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-size: 0.75rem;
+  font-weight: 300;
+  position: absolute;
+  top: 0;
+  left: 72%;
+}
+
+.login .group-9 {
+  width: 52%;
+  height: 6%;
+  position: absolute;
+  top: 91.9%;
+  left: 45%;
+}
+
+.login .overlap-3 {
+  background-color: #49bbbd;
+  border-radius: 2.25rem;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.login .text-wrapper-10 {
+  color: #ffffff;
+  font-family: "Poppins", Helvetica;
+  font-size: 1rem;
+  font-weight: 400;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+}
+
+/* BATAS===================================================== */
+
+.social-login {
+  text-align: center;
+  margin-top: 10vh;
+  font-family: "Poppins", sans-serif;
+  padding: 0 5vw;
+}
+
+.social-text {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1vh;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 4vw;
+  margin-top: 5vh;
+  flex-wrap: wrap;
+}
+
+.btn-social {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 9vw;
+  height: 9vw;
+  max-width: 45px; /* batas maksimum agar tidak terlalu besar di layar besar */
+  max-height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.btn-social:hover {
+  transform: scale(1.1);
+}
+
+.social-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* ✅ Tambahan responsif bila layar sangat kecil */
+@media (max-width: 600px) {
+  .social-text {
+    font-size: 1rem;
+  }
+
+  .btn-social {
+    width: 12vw;
+    height: 12vw;
+  }
+}
