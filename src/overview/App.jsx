@@ -4,6 +4,7 @@ import Overview from "./components/Overview";
 import Chatbot from "./components/Chatbot";
 import Courses from "./components/Courses";
 import GrammarChecker from "./components/GrammarChecker";
+import Settings from "./components/Settings";
 import "./styles.css";
 import Cookies from 'js-cookie'
 
@@ -25,15 +26,7 @@ function App() {
       case "grammarchecker":
         return <GrammarChecker userId={"default-user"} />; // Berikan userId (contoh: "default-user")
       case "settings":
-        return (
-          <div className="dashboard-container">
-            <div className="dashboard-content">
-              <div className="main-content">
-                <h1>Settings</h1>
-              </div>
-            </div>
-          </div>
-        );
+        return <Settings />;
       default:
         return <Overview />;
     }
