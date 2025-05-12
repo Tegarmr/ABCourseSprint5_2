@@ -6,6 +6,7 @@ import Courses from "./components/Courses";
 import GrammarChecker from "./components/GrammarChecker";
 import Settings from "./components/Settings";
 import "./styles.css";
+import "./setting.css";
 import Cookies from 'js-cookie'
 
 function App() {
