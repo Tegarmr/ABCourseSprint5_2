@@ -82,7 +82,7 @@ function App() {
   const renderContent = () => {
     switch (activeItem) {
       case "overview":
-        return <Overview />;
+        return <Overview setActiveItem={handleSetActiveItem} />;;
       case "chatbot":
         return <Chatbot />;
       case "courses":

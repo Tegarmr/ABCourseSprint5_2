@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function Overview() {
+export default function Overview({ setActiveItem }) {
   const navigate = useNavigate();
   const [finishedCourses, setFinishedCourses] = useState([
     {
@@ -36,12 +36,12 @@ export default function Overview() {
     "causative": "/causative/quiz",                     // Causative
     // Tambahkan mapping lain sesuai dengan struktur materi dan quiz yang ada
   };
-  
+
   // Fungsi untuk menangani tombol retake quiz
   const handleRetakeQuiz = (materiName) => {
     // Ekstrak nama materi tanpa spasi (gunakan huruf kecil untuk konsistensi)
     const materiKey = materiName.toLowerCase().replace(/\s+/g, '');
-    
+
     // Cari path quiz berdasarkan nama materi
     let quizPath = null;
     for (const [key, path] of Object.entries(quizPathMapping)) {
@@ -50,7 +50,7 @@ export default function Overview() {
         break;
       }
     }
-    
+
     // Jika quiz path ditemukan, arahkan ke halaman quiz
     if (quizPath) {
       navigate(quizPath);
@@ -95,16 +95,16 @@ export default function Overview() {
 
         const mappedCourses = filteredMateri.map((course) => {
           // Mendapatkan nilai terbaik jika tersedia
-          const bestScore = course.bestScore || 
-            (course.quiz.length > 0 
-              ? Math.max(...course.quiz.map(q => q.nilai_quiz)) 
+          const bestScore = course.bestScore ||
+            (course.quiz.length > 0
+              ? Math.max(...course.quiz.map(q => q.nilai_quiz))
               : 0);
-          
+
           // Mendapatkan nilai terbaru
-          const latestScore = course.quiz.length > 0 
-            ? course.quiz[0].nilai_quiz 
+          const latestScore = course.quiz.length > 0
+            ? course.quiz[0].nilai_quiz
             : 0;
-          
+
           return {
             nama_materi: course.nama_materi,
             materi_id: course.materi_id,
@@ -230,7 +230,7 @@ export default function Overview() {
                       </span>
                     </div>
                     <div className="col-retake">
-                      <button 
+                      <button
                         className="retake-btn"
                         onClick={() => handleRetakeQuiz(course.nama_materi)}
                         title="Retake Quiz"
@@ -311,25 +311,29 @@ export default function Overview() {
           </div>
 
           <div className="profile-management">
-              <div className="leaf-decoration-small"></div>
-              <div className="manage-profile-content">
-                <h3>Manage Profile</h3>
-                <button className="manage-profile-btn">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M9 18L15 12L9 6"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </button>
-              </div>
+            <div className="leaf-decoration-small"></div>
+            <div className="manage-profile-content">
+              <h3>Manage Profile</h3>
+              <button
+  className="manage-profile-btn"
+  onClick={() => setActiveItem("settings")}
+>
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+    <path
+      d="M9 18L15 12L9 6"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+</button>
+
             </div>
+          </div>
         </div>
       </div>
-      
+
       <style jsx>{`
         .retake-btn {
           background: none;
