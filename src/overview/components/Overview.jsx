@@ -309,6 +309,24 @@ export default function Overview() {
               </div>
             </div>
           </div>
+
+          <div className="profile-management">
+              <div className="leaf-decoration-small"></div>
+              <div className="manage-profile-content">
+                <h3>Manage Profile</h3>
+                <button className="manage-profile-btn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M9 18L15 12L9 6"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
         </div>
       </div>
       
