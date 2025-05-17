@@ -1,6 +1,10 @@
 "use client";
 
+import { useState } from 'react';
+
 function Sidebar({ activeItem, setActiveItem }) {
+  const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
+  
   const menuItems = [
     { name: "overview", label: "Overview", icon: "grid" },
     { name: "chatbot", label: "Chatbot", icon: "message-square" },
@@ -8,7 +12,20 @@ function Sidebar({ activeItem, setActiveItem }) {
     { name: "grammarchecker", label: "Grammar Checker", icon: "bar-chart" },
     { name: "settings", label: "Settings", icon: "settings" },
   ];
-    
+
+  const handleLogoutClick = () => {
+    setShowLogoutConfirm(true);
+  };
+
+  const confirmLogout = () => {
+    setShowLogoutConfirm(false);
+    setActiveItem("logout");
+  };
+
+  const cancelLogout = () => {
+    setShowLogoutConfirm(false);
+  };
+
   return (
     <div className="sidebar">
       <div className="logo-container">
@@ -171,8 +188,8 @@ function Sidebar({ activeItem, setActiveItem }) {
 
       <div className="logout-container">
         <button
-          className={`menu-item ${activeItem === "logout" ? "active" : ""}`}
-          onClick={() => setActiveItem("logout")}
+          className={`menu-item logout-button ${activeItem === "logout" ? "active" : ""}`}
+          onClick={handleLogoutClick}
         >
           <span className="icon">
             <svg
@@ -208,6 +225,92 @@ function Sidebar({ activeItem, setActiveItem }) {
           <span className="label">Log out</span>
         </button>
       </div>
+
+      {showLogoutConfirm && (
+        <div className="logout-confirm-overlay">
+          <div className="logout-confirm-dialog">
+            <h3>Konfirmasi Logout</h3>
+            <p>Apakah Anda yakin ingin keluar?</p>
+            <div className="logout-confirm-actions">
+              <button onClick={cancelLogout} className="cancel-button">
+                Batal
+              </button>
+              <button onClick={confirmLogout} className="logout-confirm-button">
+                Ya, Keluar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <style jsx>{`
+        .logout-button {
+          transition: all 0.3s ease;
+        }
+        
+        .logout-button:hover {
+          background-color: rgba(220, 53, 69, 0.1);
+        }
+        
+        .logout-button:hover .icon svg path {
+          stroke: #dc3545;
+        }
+        
+        .logout-button:hover .label {
+          color: #dc3545;
+        }
+
+        .logout-confirm-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.5);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 1000;
+        }
+
+        .logout-confirm-dialog {
+          background-color: white;
+          border-radius: 8px;
+          padding: 20px;
+          width: 300px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .logout-confirm-dialog h3 {
+          margin-top: 0;
+          color: #333;
+        }
+
+        .logout-confirm-actions {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 20px;
+          gap: 10px;
+        }
+
+        .cancel-button {
+          background-color: #f8f9fa;
+          border: 1px solid #dee2e6;
+          color: #212529;
+          padding: 8px 16px;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+        .logout-confirm-button {
+          background-color: #dc3545;
+          border: none;
+          color: white;
+          padding: 8px 16px;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+      `}</style>
     </div>
   );
 }

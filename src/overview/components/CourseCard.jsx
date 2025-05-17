@@ -4,7 +4,7 @@ import gambar2 from "../../assets/gambar2.png"
 import gambar3 from "../../assets/gambar3.png"
 import gambar4 from "../../assets/gambar4.png"
 // Fix: Import from react-icons/lu was incorrect, switching to react-icons/fa
-import { FaFileAlt } from "react-icons/fa";
+import { FaFileAlt, FaCheckCircle } from "react-icons/fa";
 
 function CourseCard({
   title,
@@ -15,6 +15,7 @@ function CourseCard({
   description,
   buttonText,
   disabled = false,
+  progress,
 }) {
   return (
     <div className="course-card">
@@ -24,6 +25,11 @@ function CourseCard({
           alt={title}
           className="course-image"
         />
+        {progress && progress.isCompleted && (
+          <div className="course-completed-badge">
+            <FaCheckCircle /> Completed
+          </div>
+        )}
       </div>
 
       <div className="course-content">
@@ -44,6 +50,20 @@ function CourseCard({
         <h3 className="course-title">{title}</h3>
 
         <p className="course-description">{description}</p>
+
+        {progress && (
+          <div className="course-progress">
+            <div className="progress-bar-container">
+              <div 
+                className="progress-bar" 
+                style={{ width: `${progress.progressPercentage}%` }}
+              ></div>
+            </div>
+            <span className="progress-text">
+              {progress.progressPercentage}% Complete
+            </span>
+          </div>
+        )}
 
         <div className="course-footer">
           <div className="materials">
